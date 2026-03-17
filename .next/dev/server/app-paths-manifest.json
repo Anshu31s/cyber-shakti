@@ -1,8 +1,0 @@
-{
-  "/api/register/route": "app/api/register/route.js",
-  "/conference/page": "app/conference/page.js",
-  "/conference/register/page": "app/conference/register/page.js",
-  "/conference/register/visitor/page": "app/conference/register/visitor/page.js",
-  "/page": "app/page.js",
-  "/payment/page": "app/payment/page.js"
-}

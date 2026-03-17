@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/anshu/OneDrive/Desktop/WebHack/lib/prisma.js"],"sourcesContent":["import 'dotenv/config'\nimport { Pool } from 'pg'\nimport { PrismaPg } from '@prisma/adapter-pg'\nimport { PrismaClient } from './prisma-client'\n\nconst prismaClientSingleton = () => {\n  console.log('--- Initializing Prisma Client with Driver Adapter ---');\n  if (!process.env.DATABASE_URL) {\n    console.warn('WARNING: DATABASE_URL is not defined in process.env!');\n  }\n  \n  const pool = new Pool({ connectionString: process.env.DATABASE_URL })\n  const adapter = new PrismaPg(pool)\n  return new PrismaClient({ adapter })\n}\n\nconst globalForPrisma = globalThis\n\nconst prisma = globalForPrisma.prisma ?? prismaClientSingleton()\n\nexport default prisma\n\nif (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma\n"],"names":[],"mappings":";;;;AAAA;AACA;AACA;AACA;;;;;;;;;;AAEA,MAAM,wBAAwB;IAC5B,QAAQ,GAAG,CAAC;IACZ,IAAI,CAAC,QAAQ,GAAG,CAAC,YAAY,EAAE;QAC7B,QAAQ,IAAI,CAAC;IACf;IAEA,MAAM,OAAO,IAAI,qJAAI,CAAC;QAAE,kBAAkB,QAAQ,GAAG,CAAC,YAAY;IAAC;IACnE,MAAM,UAAU,IAAI,yKAAQ,CAAC;IAC7B,OAAO,IAAI,kJAAY,CAAC;QAAE;IAAQ;AACpC;AAEA,MAAM,kBAAkB;AAExB,MAAM,SAAS,gBAAgB,MAAM,IAAI;uCAE1B;AAEf,wCAA2C,gBAAgB,MAAM,GAAG"}}]
-}
