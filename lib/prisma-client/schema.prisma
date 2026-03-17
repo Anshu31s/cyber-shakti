@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider        = "prisma-client-js"
+  output          = "../lib/prisma-client"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Registration {
+  id             String  @id @default(cuid())
+  registrantType String // Delegate, Team, Student
+  name           String
+  email          String
+  phone          String
+  gender         String?
+  addressLine1   String?
+  country        String?
+  state          String?
+  city           String?
+  zipCode        String?
+
+  // Professional / Educational info
+  company     String?
+  designation String?
+  sector      String?
+  collegeName String?
+
+  // Team info
+  teamSize    Int?     @default(1)
+  memberNames String[] // For team passes
+
+  // File upload reference
+  fileName String?
+  fileData String? @db.Text // Storing base64 for now, though not ideal for large files
+
+  // Status and Payment
+  participationType String?
+  paymentStatus     String  @default("PENDING") // PENDING, SUCCESS, FAILED
+  amountPaid        Float?
+
+  updatedAt DateTime @updatedAt
+}
