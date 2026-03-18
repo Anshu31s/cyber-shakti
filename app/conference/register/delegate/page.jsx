@@ -158,7 +158,7 @@ const DelegateRegistration = () => {
       
       updateRegistration({
         amount: 1499,
-        type: "Delegate PASS",
+        type: "Delegate Pass",
         userDetails: payload,
         originPage: "Delegate",
       });

@@ -157,7 +157,7 @@ const VisitorRegistration = () => {
       
       updateRegistration({
         amount: 999,
-        type: "Student PASS",
+        type: "Student Pass (Early Bird)",
         userDetails: payload,
         originPage: "Student",
       });

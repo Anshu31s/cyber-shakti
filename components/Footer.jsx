@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -31,8 +31,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-400 max-w-sm font-light">
-              Webhack Solutions is a leading digital media and marketing agency
-              specializing in innovative solutions that drive real results.
+              Webhack Solutions is a cutting-edge cybersecurity and digital solutions company, delivering innovative services in cyber security, digital forensics, and tech-driven problem solving to empower businesses in a secure digital world.
             </p>
           </div>
 
@@ -65,7 +64,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt mt-1 mr-3 text-cyan-400"></i>
                 <span>
-                  8-12-97/2 TNGO's Colony, Hyderabad, Telangana 500077, India
+                  1st floor, C.T Tower, above UCO bank, Sector 2, Partapur,
+                  Meerut, Uttar Pradesh 250103
                 </span>
               </li>
               <li className="flex items-center">
@@ -74,16 +74,15 @@ const Footer = () => {
                   href="mailto:info@cybershakti.in"
                   className="hover:text-white transition-colors"
                 >
-                  info@webhacksolution.com
+                  Contact@webhacksolutions.com
                 </a>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope mr-3 text-cyan-400"></i>
                 <a
-                  href="mailto:cybershakti.in@gmail.com"
                   className="hover:text-white transition-colors"
                 >
-                  webhacksolution@gmail.com
+                  +91 7895775779
                 </a>
               </li>
             </ul>
@@ -93,7 +92,7 @@ const Footer = () => {
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left">
             <p className="text-gray-500 text-sm">
-              &copy; 2022 Webhack Solutions. All rights reserved.
+              Copyright ©️ 2026
             </p>
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">

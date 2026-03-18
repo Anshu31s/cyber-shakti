@@ -171,6 +171,7 @@ const Registration = () => {
               </h3>
               <div className="flex items-baseline gap-1 mb-6">
                 <span className="text-2xl text-gray-400">₹</span>
+                <span className="text-2xl text-gray-500 line-through mr-2">1999</span>
                 <span className="text-4xl font-bold text-cyan-400">999</span>
                 <span className="text-gray-500 text-sm ml-2">/- only</span>
               </div>
@@ -252,6 +253,7 @@ const Registration = () => {
               </h3>
               <div className="flex items-baseline gap-1 mb-6">
                 <span className="text-2xl text-gray-400">₹</span>
+                <span className="text-2xl text-gray-500 line-through mr-2">2499</span>
                 <span className="text-4xl font-bold text-purple-400">1499</span>
                 <span className="text-gray-500 text-sm ml-2">/- only</span>
               </div>
