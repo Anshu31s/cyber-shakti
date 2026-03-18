@@ -43,6 +43,7 @@ const Footer = () => {
               {[
                 { name: "Conference", path: "/conference" },
                 { name: "Registration", path: "/conference/register" },
+                { name: "Portfolio", path:"https://webhacksolutions.com/portfolio"}
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -56,9 +57,9 @@ const Footer = () => {
             </ul> */}
             <ul className="space-y-2">
   {[
-    { name: "Conference", path: "/conference" },
-    { name: "Registration", path: "/conference/register" },
-    { name: "Portfolio", path: "https://webhacksolutions.com/portfolio", external: true },
+    { name: "Conference", path: "/conference", external: false },
+    { name: "Registration", path: "/conference/register", external: false },
+    { name: "Portfolio", path: "https://webhacksolutions.com/portfolio", external: true }
   ].map((item) => (
     <li key={item.name}>
       {item.external ? (
