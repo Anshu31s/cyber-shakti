@@ -33,7 +33,7 @@ const BackToTop = () => {
             {/* WhatsApp Community Button */}
             <motion.a 
                 layout
-                href="https://chat.whatsapp.com/ByIi6ZjVhVMAggg4XIE4WS?mode=wwt" 
+                href="https://chat.whatsapp.com/BkfJplYjA748tc1QNpEv7P" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-[0_0_20px_rgba(37,211,102,0.5)] border border-green-400/30 flex items-center justify-center relative group"
