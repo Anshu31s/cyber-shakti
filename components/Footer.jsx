@@ -39,7 +39,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4 uppercase tracking-wider">
               Links
             </h4>
-            <ul className="space-y-2">
+            {/* <ul className="space-y-2">
               {[
                 { name: "Conference", path: "/conference" },
                 { name: "Registration", path: "/conference/register" },
@@ -53,7 +53,34 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
+            <ul className="space-y-2">
+  {[
+    { name: "Conference", path: "/conference" },
+    { name: "Registration", path: "/conference/register" },
+    { name: "Portfolio", path: "https://webhacksolutions.com/portfolio", external: true },
+  ].map((item) => (
+    <li key={item.name}>
+      {item.external ? (
+        <a
+          href={item.path}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-cyan-400 transition-colors text-sm"
+        >
+          {item.name}
+        </a>
+      ) : (
+        <Link
+          href={item.path}
+          className="text-gray-400 hover:text-cyan-400 transition-colors text-sm"
+        >
+          {item.name}
+        </Link>
+      )}
+    </li>
+  ))}
+</ul>
           </div>
 
           <div>
