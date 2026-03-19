@@ -363,7 +363,7 @@ const Conference = () => {
         </div>
 
         {/* Speakers Section - Marquee Style */}
-        {/* <div className="mb-24 overflow-hidden relative">
+        <div className="mb-24 overflow-hidden relative">
           <style>{`
                 @keyframes marquee {
                     0% { transform: translateX(0); }
@@ -382,7 +382,7 @@ const Conference = () => {
               <h2 className="text-3xl font-bold mb-2">Keynote Speakers</h2>
               <div className="h-1 w-20 bg-cyan-500 rounded-full"></div>
             </div>
-          </div> */}
+          </div>
 
           <div className="relative w-full overflow-hidden">
             {/* Gradient Masks for smooth fade edges */}
