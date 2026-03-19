@@ -11,14 +11,17 @@ export const metadata = {
   keywords: 'Webhack Solutions, Digital Media, Marketing Agency, Digital Marketing, Social Media Marketing, SEO, Content Marketing, Branding, Web Development, Digital Strategy',
   authors: [{ name: 'Webhack Solutions' }],
   robots: 'index, follow',
+  icons: {
+    icon: '/assets/logo/webhack.jpg',
+    shortcut: '/assets/logo/webhack.jpg',
+    apple: '/assets/logo/webhack.jpg',
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="shortcut icon" href="/CSLogo.ico" type="image/x-icon" />
-      </head>
+      <head />
       <body>
         <Providers>
           <Navbar />
